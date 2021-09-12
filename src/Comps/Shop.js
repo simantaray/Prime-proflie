@@ -7,12 +7,15 @@ function Shop(props) {
         <img src="/icon.svg" alt="" />
         <h1>{props.title}</h1>
       </Title>
+      
+      <a href={props.href}>
       <Link>
         <h1>{props.link}</h1>
         <Button>
           <img src="/share.svg" alt="" />
         </Button>
       </Link>
+      </a>
     </Container>
   );
 }
@@ -32,6 +35,11 @@ const Container = styled.div`
   color: rgba(77, 77, 77, 100);
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+  a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+  }
 
   @media only screen and (max-width: 1200px) {
     width: 90%;

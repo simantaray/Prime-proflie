@@ -16,7 +16,9 @@ function Youtube() {
             I’m Lilly Sabri, founder of Lean with Lilly. I’ve been a
             Chartered...
           </h2>
-          <button>Subscribe</button>
+          <a href="https://www.youtube.com/channel/UCTsM1dSAiXqiV5oZjuNw_Bg">
+            <button>Subscribe</button>
+          </a>
         </div>
       </Card>
     </Container>

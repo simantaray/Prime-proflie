@@ -6,16 +6,19 @@ function Body() {
   return (
     <Container>
       <Shop
+        href="https://mailchi.mp/leanwithlilly/freeworkouttimetable"
         title="THE LEAN APP IS COMING GUIDE!"
         link="SIGN UP NOW FOR FREE GUIDES"
       />
       <Youtube />
-      <Shop title="Get my Cookbook!" link="BUY NOW" />
+      <Shop href ="https://www.leanwithlilly.com/products/the-anti-inflammatory-cook-book/" title="Get my Cookbook!" link="BUY NOW" />
       <Shop
+      href="https://www.leanwithlilly.com/products/video-8-week-lean-transformation-guide"
         title="50% OFF my best selling 8 WEEK LEAN TRANSFORMATION GUIDE"
         link="BUY GORGEOUS GYM CLOTHING NOW"
       />
-      <Shop title="LEAN RESISTANCE BANDS" link="SHOP NOW!" />
+      <Shop href="https://www.leanwithlilly.com/collections/resistance-bands/" 
+      title="LEAN RESISTANCE BANDS" link="SHOP NOW!" />
     </Container>
   );
 }
