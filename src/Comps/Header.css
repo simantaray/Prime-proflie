@@ -1,7 +1,41 @@
+
+@media only screen and (min-width: 500px) {
 .dp.active{
     
     display: none;
 }
 .dp{
     transition: all 5ms ease;
+}
+
+}
+@media only screen and (max-width: 500px) {
+    
+    .dp{
+        position: relative;
+        top:0;
+        left: 0px;
+        transition: all 5ms cubic-bezier(.76,.28,.48,.79);
+    }
+    .dp.active{
+    
+        margin: 0 30px;
+        transition: all 5ms cubic-bezier(.76,.28,.48,.79);
+    }
+    .container.active{
+        display: flex;
+        
+        text-align: center;
+        transition: all 5ms cubic-bezier(.76,.28,.48,.79);
+    }
+    .link.active{
+        display: none;
+        transition: all 5ms cubic-bezier(.76,.28,.48,.79);
+    }
+    .name.active{
+        position: relative;
+        top:7px;
+        right: 10px;
+        transition: all 5ms cubic-bezier(.76,.28,.48,.79);
+    }
 }

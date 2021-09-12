@@ -6,7 +6,7 @@ function Header() {
   const [dp, setDp] = useState(false);
 
   const changeDp = () => {
-    if (window.scrollY >= 70) {
+    if (window.scrollY >= 10) {
       setDp(true);
     } else {
       setDp(false);
@@ -16,12 +16,12 @@ function Header() {
   window.addEventListener("scroll", changeDp);
 
   return (
-    <Container>
-      <Img className={dp ? "dp active" : "dp"} src="/dp.jpg"></Img>
-      <Name>
+    <Container className={dp ? "container active" :"container"}>
+      <Img className={dp ? "dp active" : "dp"} src="/dp1.jpg"></Img>
+      <Name className={dp ? "name active" : "name"}>
         Lilly Sabri<span>PRO</span>
       </Name>
-      <h1 className="link">bio.fm/lillysabri</h1>
+      <h1 className={dp ? "link active" : "link"}>bio.fm/lillysabri</h1>
     </Container>
   );
 }
@@ -29,13 +29,14 @@ function Header() {
 export default Header;
 
 const Container = styled.div`
+  z-index: 100;
   position: fixed;
   top: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   width: 100vw;
-  box-shadow: 0px 3px 5px 0px rgba(49, 49, 53, 0.1);
+  box-shadow: 0px 3px 5px 0px rgba(49, 49, 53, 0.4);
   padding: 24px 0;
   background-color: rgba(64, 224, 208, 100);
 
@@ -49,10 +50,10 @@ const Container = styled.div`
   }
 `;
 const Img = styled.img`
-  width: 40px;
-  height: auto;
+  width: 48px;
+  height: 46px;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 2px solid white;
 `;
 const Name = styled.h1`
   position: relative;
