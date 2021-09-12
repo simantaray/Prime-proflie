@@ -28,6 +28,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   align-self: center;
+  transition: all 0.5s ease-in-out;
 
   margin: -8px;
   margin-top: 150px;

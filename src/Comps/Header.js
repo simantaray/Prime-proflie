@@ -48,6 +48,7 @@ const Container = styled.div`
     margin-top: 4px;
     margin-bottom: 0;
   }
+  
 `;
 const Img = styled.img`
   width: 48px;
